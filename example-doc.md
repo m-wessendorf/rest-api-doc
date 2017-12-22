@@ -25,7 +25,7 @@ Create, edit and view a user profile.
 ```
 (Request)
 
-URL-Params (Required): id=[int]
+URL-Params (Required): email=[String]
 URL-Params (Optional): -
 
 Data-Params: -
@@ -98,6 +98,7 @@ Content: -
   Data-Params:
   {
     name: [String],
+    email: [String],
     age: [int],
     description: [String]
   }
@@ -116,15 +117,3 @@ Content: -
   ```
 
 </details>
-
-<br>
-
-## Presence Tracker
-
-Tracks the presence of registered users via IP technology.
-
-**GET /presence/activepersons**
-
-**POST /presence/newsignal**
-
-**POST /presence/newperson**
